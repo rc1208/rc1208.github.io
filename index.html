@@ -44,7 +44,15 @@ layout: default
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
               <h2 class="display-4">Tutorials</h2>
-              <p>1. Welcome <a href = "{{ site.url }}{% post_url 2018-10-27-welcome-to-jekyll %}"> </p>
+                <ul>
+                      {%  for post in site.posts %}
+                      <li>
+                            <h3> <a href = "{{post.url}}"></h3>
+                      </li>
+                      {% endfor %}
+                </ul>
+              
+
           </div>
         </div>
       </div>
