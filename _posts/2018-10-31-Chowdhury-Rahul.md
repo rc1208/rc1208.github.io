@@ -1,4 +1,9 @@
+---
+layout: notebook
+title:  "Welcome to Jekyll!"
 
+
+---
 ```python
 __author__ = "Rahul Chowdhury"
 #Basic code understanding of networkx done from: https://www.datacamp.com/community/tutorials/networkx-python-graph-tutorial
@@ -117654,7 +117659,7 @@ for e1, e2 in G.edges():
           1 #access each edge in American75.txt
           2 for e1, e2 in G.edges():
     ----> 3     print(e1,e2)
-    
+
 
     /anaconda2/envs/py36/lib/python3.6/site-packages/ipykernel/iostream.py in write(self, string)
         374             is_child = (not self._is_master_process())
@@ -117676,7 +117681,7 @@ for e1, e2 in G.edges():
         389                                  copy_threshold=self.copy_threshold)
         390             data.group = group
     --> 391         return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
-        392 
+        392
         393     def send_multipart(self, msg_parts, flags=0, copy=True, track=False, **kwargs):
 
 
@@ -117692,7 +117697,7 @@ for e1, e2 in G.edges():
     /anaconda2/envs/py36/lib/python3.6/site-packages/zmq/backend/cython/checkrc.pxd in zmq.backend.cython.checkrc._check_rc()
 
 
-    KeyboardInterrupt: 
+    KeyboardInterrupt:
 
 
 
@@ -117924,7 +117929,7 @@ for name in glob.glob('facebook100txt/*'):
 
 ```python
 #make a list of all the 100 files which have edge list of the 100 universities by excluding the metadata files
-files = [fn for fn in glob.glob('facebook100txt/*') 
+files = [fn for fn in glob.glob('facebook100txt/*')
          if not os.path.basename(fn).endswith('_attr.txt')]
 len(files)
 ```
@@ -117948,12 +117953,12 @@ for f in files: #read each file
     denominator = 2*len(G.edges()) #Average degree
     for key,value in deg_list.items():
         numerator = numerator + value*value
-        
+
     k_v = numerator/denominator
     k_u = 2 *len(G.edges)/len(G.nodes)
     ratio[f] = k_v/k_u  
     mean_k_u_list[f] = k_u
-    
+
 ```
 
 
@@ -118026,7 +118031,7 @@ def temporal_graph(x_data,y_data,xlabel,ylabel,title):
     # Plot the data, set the size (s), color and transparency (alpha)
     # of the points
     ax.scatter(x_data, y_data, color = '#539caf', alpha = 0.75)
-    
+
     plt.axhline(y=1, color='b', linestyle='-', label = "line")
     R, = ax.plot(Reed_x,Reed_y, "bo")
     B, = ax.plot(Bucknell_x,Bucknell_y, "or")
@@ -118034,7 +118039,7 @@ def temporal_graph(x_data,y_data,xlabel,ylabel,title):
     V, = ax.plot(Virginia_x,Virginia_y, "ko")
     U, = ax.plot(Uc_Berkeley_x,Uc_Berkeley_y, "go")
     plt.legend([R,B,M,V,U],['Reed','Bucknell','Mississipi','Virginia','UC Berkeley'])
-   
+
 ```
 
 
@@ -118068,7 +118073,7 @@ for f in files: #read each file
     giant = max(nx.connected_component_subgraphs(G), key=len)
     d = nx.diameter(giant, e=None)
     print(f, d)
-    diameter[f] = d 
+    diameter[f] = d
 ```
 
     facebook100txt/Haverford76.txt 6
@@ -118104,7 +118109,7 @@ for f in files: #read each file
         275     if e is None:
     --> 276         e = eccentricity(G)
         277     return max(e.values())
-        278 
+        278
 
 
     /anaconda2/envs/py36/lib/python3.6/site-packages/networkx/algorithms/distance_measures.py in eccentricity(G, v, sp)
@@ -118119,8 +118124,8 @@ for f in files: #read each file
          64         cutoff = float('inf')
          65     nextlevel = {source: 1}
     ---> 66     return dict(_single_shortest_path_length(G.adj, nextlevel, cutoff))
-         67 
-         68 
+         67
+         68
 
 
     /anaconda2/envs/py36/lib/python3.6/site-packages/networkx/algorithms/shortest_paths/unweighted.py in _single_shortest_path_length(adj, firstlevel, cutoff)
@@ -118132,14 +118137,14 @@ for f in files: #read each file
 
 
     /anaconda2/envs/py36/lib/python3.6/site-packages/networkx/classes/coreviews.py in __getitem__(self, key)
-         53 
+         53
          54     def __getitem__(self, key):
     ---> 55         return self._atlas[key]
-         56 
+         56
          57     def copy(self):
 
 
-    KeyboardInterrupt: 
+    KeyboardInterrupt:
 
 
 
@@ -118147,9 +118152,8 @@ for f in files: #read each file
 def mul(number):
     new_num=number*10
     print(new_num)
-    
+
 mul(2)
 ```
 
     20
-
