@@ -1,11 +1,16 @@
+---
+layout: notebook
+title:  "Introduction-to-Python"
 
+
+---
 ```python
 __author__ = "Rahul Chowdhury"
 import sys
 print(sys.version) # Using python 3.6 and custom Anaconda environment.
 ```
 
-    3.6.5 |Anaconda custom (64-bit)| (default, Apr 26 2018, 08:42:37) 
+    3.6.5 |Anaconda custom (64-bit)| (default, Apr 26 2018, 08:42:37)
     [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)]
 
 
@@ -19,7 +24,7 @@ Let's start like how every coding tutorial begins. A "Hello World" in Python!
 
 
 ```python
-print("Hello World!") 
+print("Hello World!")
 ```
 
     Hello World!
@@ -105,7 +110,7 @@ import matplotlib.pyplot as plt
 import numpy as np #library for creating neat scientific computing
 # and helpful data structures such as  multidimensional arrays and matrices
 #so that plots are inline in a Jupyter notebook
-%matplotlib inline 
+%matplotlib inline
 ```
 
 
@@ -141,4 +146,3 @@ plt.show() #A plot to visualize the relation between numbers and their respectiv
 
 
 ![png](/images/2018-11-03-Introduction-to-Python_18_0.png)
-
