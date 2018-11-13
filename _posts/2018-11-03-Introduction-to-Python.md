@@ -1,5 +1,5 @@
 ---
-layout: notebook
+layout: simple
 title:  "Introduction-to-Python"
 
 

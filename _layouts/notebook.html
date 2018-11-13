@@ -9,7 +9,6 @@
     <meta name="author" content="">
 
     <title>{{site.title}}</title>
-
     <!-- Bootstrap core CSS -->
     <link href="{{site.url}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{site.url}}/css/one-page-wonder.min.css" rel="stylesheet">
-
+    
   </head>
 
   <body>
@@ -49,7 +48,7 @@
         </div>
       </div>
     </nav>
-    <div style=" width: 85%;margin: auto; padding: 10px">{{content}}</div>
+    <div style=" width: 85%;margin: auto; padding: 10px">{{content | markdownify }}</div>
      
    
 <!-- Footer -->
