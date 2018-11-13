@@ -47,7 +47,7 @@ layout: default
                 <ul>
                       {%  for post in site.posts %}
                       <li>
-                            <a href = "{{post.url | prepend: site.url}}">{{post.title}}</a>
+                            <a href = "{{post.url | prepend: site.url}}" target="_blank" >{{post.title}}</a>
                       </li>
                       {% endfor %}
                 </ul>
