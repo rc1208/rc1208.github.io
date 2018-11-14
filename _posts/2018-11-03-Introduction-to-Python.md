@@ -15,7 +15,7 @@ print(sys.version) # Using python 3.6 and custom Anaconda environment.
 
 
 ### Helpful links
-1. To learn more how to setting up enivornments using Anaconda:  [Setting up a Conda Environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) <br>
+1. To learn more how to setting up environments using Anaconda:  [Setting up a Conda Environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) <br>
 2. Great article showing why you should set up a python environment: [click here](https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c)
 3. Install Python package manager called [pip](www.https://pip.pypa.io/en/stable)
 4. A very nice article to learn how to make pretty plots in matplotlib: [click here](https://www.datascience.com/learn-data-science/tutorials/creating-data-visualizations-matplotlib-data-science-python)
