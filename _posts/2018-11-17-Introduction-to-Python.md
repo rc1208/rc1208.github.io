@@ -1,4 +1,9 @@
+---
+layout: simple
+title:  "Introduction-to-Python"
 
+
+---
 ```python
 __author__ = "Rahul Chowdhury"
 import sys
